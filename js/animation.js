@@ -2,9 +2,7 @@ const gdm = document.querySelector(".good-morning");
 const ahile = today.getHours();
 const tl = gsap.timeline();
 
-// ahile <= 6 && ahile >= 3
-
-if (1) {
+if (ahile <= 6 && ahile >= 3) {
   gdm.style.visibility = "visible";
 
   tl.from(".good-morning svg", 1, {
