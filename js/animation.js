@@ -14,29 +14,24 @@ if (ahile <= 6 && ahile >= 3) {
       amount: 0.4,
     },
   });
-
-  tl.to(
-    ".good-morning svg",
-    1,
-    {
-      x: 200,
-      opacity: 0,
-      ease: "SlowMo.ease.config(0.7, 0.7, false)",
-    },
-    "+=1.5"
-  );
 }
 
-tl.from(
-  ".day",
+tl.from(".day", 1, {
+  opacity: 0,
+  ease: "SlowMo.ease.config(0.7, 0.7, false)",
+  delay: 1,
+  scaleX: 0,
+});
+
+tl.to(
+  ".good-morning svg",
   1,
   {
+    x: 200,
     opacity: 0,
     ease: "SlowMo.ease.config(0.7, 0.7, false)",
-    delay: 1,
-    scaleX: 0,
   },
-  "-=2"
+  "-=1"
 );
 
 tl.from(
@@ -87,24 +82,18 @@ tl.from(
   1.8,
   {
     x: 2000,
-    opacity: 0,
     ease: "power4.out",
     delay: 0,
-    // scale: 45,
-    // skewY: 15,
   },
-  "-=1.8"
+  "-=1.9"
 );
 tl.from(
   ".inner-bar-1",
   1.8,
   {
     x: 2000,
-    opacity: 0,
     ease: "power4.out",
     delay: 0,
-    // scale: 45,
-    // skewY: 15,
   },
   "-=0.2"
 );
@@ -112,12 +101,9 @@ tl.from(
   ".asmt",
   1.8,
   {
-    // x: 500,
     opacity: 0,
     ease: "power4.out",
     delay: 0,
-    // scale: 45,
-    // skewY: 15,
   },
   "-=0.8"
 );
@@ -125,12 +111,9 @@ tl.from(
   ".sem",
   1.8,
   {
-    // x: 500,
     opacity: 0,
     ease: "power4.out",
     delay: 0,
-    // scale: 45,
-    // skewY: 15,
   },
   "-=3.8"
 );
