@@ -1,0 +1,69 @@
+@media screen and (max-width: 1100px) {
+  .container {
+    .day {
+      .today-is {
+        font-size: 3.5rem;
+      }
+    }
+
+    .sub {
+      ul {
+        margin-left: 0;
+        li {
+          a {
+            font-size: 4rem;
+          }
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: 800px) {
+    * {
+      -webkit-tap-highlight-color: transparent;
+    }
+
+    body {
+      height: 100vh;
+      width: 100vw;
+    }
+
+    .fly {
+      display: none;
+    }
+
+    .top-bar {
+      font-size: 0.5rem;
+      height: 50px;
+    }
+
+    .container {
+      flex-direction: column;
+
+      .day {
+        height: 30vh;
+        width: 100vw;
+
+        .today-is {
+          font-size: 4rem;
+          margin-top: 1em;
+        }
+      }
+
+      .sub {
+        width: 100vw;
+        height: 70vh;
+        justify-content: center;
+        ul {
+          margin: 0;
+          li {
+            a {
+              font-size: 2rem;
+              text-align: center;
+            }
+          }
+        }
+      }
+    }
+  }
+}
