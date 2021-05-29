@@ -5,6 +5,7 @@ html {
 body {
   background-color: var(--primary-color);
   position: relative;
+  overflow: hidden;
 }
 
 .gdm-container {
@@ -35,6 +36,38 @@ body {
   height: 100vh;
   z-index: 9999;
   background-color: var(--secondary-color);
+}
+
+.resources {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  z-index: 99999999;
+  overflow: hidden;
+
+  .border-bottom {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 70vw;
+    height: 1px;
+    background-color: #111111;
+  }
+
+  a {
+    color: #252525;
+    letter-spacing: 0;
+    font-size: 0.9rem;
+    padding: 0.5em;
+    transition: color 0.5s ease;
+    &:hover {
+      color: var(--secondary-color);
+    }
+  }
 }
 
 .top-bar {

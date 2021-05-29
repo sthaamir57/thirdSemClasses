@@ -22,9 +22,7 @@ const subject = {
   },
   DSA: {
     title: "DSA",
-    // link: "https://meet.google.com/yak-ddjh-kcs",
-    // link: "https://meet.google.com/kmm-jckn-aah",
-    link: "https://meet.google.com/ssw-hkhf-oyk",
+    link: "https://meet.google.com/grj-qgaa-xeq",
   },
 };
 
@@ -46,7 +44,7 @@ function display() {
 
 function noClass(day) {
   console.log("Today is HOliday");
-  alert("NO classes today");
+  alert("No classes today");
   let element = `<li><a href="#">Null</a></li>`;
   UL.innerHTML = `${element}`;
   todayIs.children[0].innerHTML = days[day];

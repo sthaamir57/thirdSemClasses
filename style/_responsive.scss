@@ -1,4 +1,4 @@
-@media screen and (max-width: 1100px) {
+@media screen and (max-width: 1250px) {
   .container {
     .day {
       .today-is {
@@ -18,7 +18,7 @@
     }
   }
 
-  @media screen and (max-width: 800px) {
+  @media screen and (max-width: 980px) {
     * {
       -webkit-tap-highlight-color: transparent;
     }
@@ -36,6 +36,14 @@
       display: none;
     }
 
+    .resources {
+      justify-content: center;
+
+      .border-bottom {
+        width: 100vw;
+      }
+    }
+
     .top-bar {
       font-size: 0.5rem;
       height: 50px;
@@ -47,6 +55,7 @@
       .day {
         height: 30vh;
         width: 100vw;
+        transform-origin: bottom center;
 
         .today-is {
           font-size: 4rem;
@@ -62,7 +71,7 @@
           margin: 0;
           li {
             a {
-              font-size: 2rem;
+              font-size: 1.8rem;
               text-align: center;
             }
           }

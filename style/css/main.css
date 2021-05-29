@@ -7,7 +7,7 @@
   --highlight-light-color: #9f0000;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 980px) {
   :root {
     --highlight-dark-color: var(--highlight-light-color);
   }
@@ -54,6 +54,7 @@ html {
 body {
   background-color: var(--primary-color);
   position: relative;
+  overflow: hidden;
 }
 
 .gdm-container {
@@ -84,6 +85,46 @@ body {
   height: 100vh;
   z-index: 9999;
   background-color: var(--secondary-color);
+}
+
+.resources {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  z-index: 99999999;
+  overflow: hidden;
+}
+
+.resources .border-bottom {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 70vw;
+  height: 1px;
+  background-color: #111111;
+}
+
+.resources a {
+  color: #252525;
+  letter-spacing: 0;
+  font-size: 0.9rem;
+  padding: 0.5em;
+  -webkit-transition: color 0.5s ease;
+  transition: color 0.5s ease;
+}
+
+.resources a:hover {
+  color: var(--secondary-color);
 }
 
 .top-bar {
@@ -224,7 +265,7 @@ body {
   background-color: var(--highlight-dark-color);
 }
 
-@media screen and (max-width: 1100px) {
+@media screen and (max-width: 1250px) {
   .container .day .today-is {
     font-size: 3.5rem;
   }
@@ -236,7 +277,7 @@ body {
   }
 }
 
-@media screen and (max-width: 1100px) and (max-width: 800px) {
+@media screen and (max-width: 1250px) and (max-width: 980px) {
   * {
     -webkit-tap-highlight-color: transparent;
   }
@@ -249,6 +290,14 @@ body {
   }
   .fly {
     display: none;
+  }
+  .resources {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .resources .border-bottom {
+    width: 100vw;
   }
   .top-bar {
     font-size: 0.5rem;
@@ -263,6 +312,8 @@ body {
   .container .day {
     height: 30vh;
     width: 100vw;
+    -webkit-transform-origin: bottom center;
+            transform-origin: bottom center;
   }
   .container .day .today-is {
     font-size: 4rem;
@@ -279,7 +330,7 @@ body {
     margin: 0;
   }
   .container .sub ul li a {
-    font-size: 2rem;
+    font-size: 1.8rem;
     text-align: center;
   }
 }
