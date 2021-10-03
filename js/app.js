@@ -52,7 +52,8 @@ function noClass(day) {
 
 function subFirst(day) {
   let element = `<li><a href="${subject.CG.link}">${subject.CG.title}</a></li>
-        <li><a href="${subject.CA.link}">${subject.CA.title}</a></li>`;
+        <li><a href="${subject.CA.link}">${subject.CA.title}</a></li>
+        <li><a href="${subject.STAT.link}">${subject.STAT.title}</a></li>`;
   UL.innerHTML = `${element}`;
   todayIs.children[0].innerHTML = days[day];
 }
